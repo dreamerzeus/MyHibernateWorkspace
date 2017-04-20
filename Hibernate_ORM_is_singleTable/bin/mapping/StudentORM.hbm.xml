@@ -1,0 +1,26 @@
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+    <hibernate-mapping>
+    <class name="bean.StudentORM" table="StudentORM" schema="becm8">
+    <id name="id"></id>
+    <property name="name"></property>
+    <property name="school"></property>
+   
+    <joined-subclass name="bean.MechStudent" table="mech">
+    <property name="branchSub"></property>
+    <key column="id"/>
+    </joined-subclass>
+    
+    <joined-subclass name="bean.ElectStudent" table="elect">
+    <property name="ElectricalProj"></property>
+    <key column="id"/>
+    </joined-subclass>
+    
+    <joined-subclass name="bean.CivilStudent" table="civil">
+    <property name="CivilPrj"></property>
+    <key column="id"/>>
+    </joined-subclass>
+    
+    </class> 
+    </hibernate-mapping>
