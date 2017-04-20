@@ -1,0 +1,10 @@
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+    <hibernate-mapping>
+    <class name="bean_classes.School_student" table="School_student" schema="becm8">
+   <id name="ss_id"/>
+   <property name="ss_name"/>
+    <property name="course"/>
+    </class>
+    </hibernate-mapping>
